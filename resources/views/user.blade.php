@@ -260,6 +260,12 @@
                             'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
                         },
                     success: function (response) {
+                        $('#viewusername').val(response.username)
+                        $('#viewpassword').val(response.password)
+                        $('#viewfirst_name').val(response.first_name)
+                        $('#viewlast_name').val(response.last_name)
+                        $('#viewaddress').val(response.address)
+                        $('#viewemail_address').val(response.email_address)
                         
                     }
                 });
